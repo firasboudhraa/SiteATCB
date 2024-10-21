@@ -4,24 +4,25 @@
     margin-right: 40px;
     justify-content: space-between;
     align-items: center;
-    background-color: #e1f0d6; 
+    background-color: #9dc084; 
     padding: 10px 20px;
     font-family: Arial, sans-serif;
     box-shadow: 0 4px 2px -2px gray;
+    border-radius: 5cap;
   }
   
   .logo img {
-    height: 50px;
+    height: 80px;
     margin-left: 10px;
-    margin-right: 300px;
-    border-radius: 30%; 
+    margin-right: 200px;
+    border-radius: 50%; 
     object-fit: cover; 
     width: 80px;
   }
   
   .menu {
     display: flex;
-    gap: 80px;
+    gap: 40px;
   }
   
   .menu a {
@@ -29,6 +30,7 @@
     color: black;
     font-weight: bold;
     font-size: 16px;
+    margin-left: 80px;
     transition: color 0.3s;
   }
   
@@ -57,6 +59,8 @@
   
   .flag {
     font-size: 20px;
+    width: 20px;
+    height: auto;
   }
   
   .loginButton {

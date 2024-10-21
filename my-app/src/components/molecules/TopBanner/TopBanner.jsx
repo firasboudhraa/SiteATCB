@@ -14,6 +14,7 @@ const TopBanner = () => {
   return (
     <div className={styles.bannerContainer}>  
       <div className={styles.logo}>  
+      <img src="/logo.png" alt="Logo" />
       </div>
 
       <button className={styles.loginButton} onClick={handleLogin}>  

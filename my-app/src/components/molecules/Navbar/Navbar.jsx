@@ -1,20 +1,19 @@
 import React from 'react';
-import { FaUser } from 'react-icons/fa';
-import { FaFlag } from 'react-icons/fa';
+import Flag from 'react-world-flags';
 import styles from "@/styles/Navbar.module.css";
 
 const Navbar = () => {
   return (
     <div className={styles.navbarContainer}>
       <div className={styles.logo}>
-        <img src="/logo.png" alt="Logo" />
       </div>
 
       <div className={styles.menu}>
         <a href="/">Accueil</a>
-        <a href="/actualite">Actualité</a>
+        <a href="/actualite">Actualités</a>
         <a href="/presentation">Présentation</a>
         <a href="/recherche">Recherche</a>
+        <a href="/formation">Formation</a>
       </div>
 
       <div className={styles.searchContainer}>
@@ -22,8 +21,8 @@ const Navbar = () => {
       </div>
 
       <div className={styles.language}>
-        <FaFlag className={styles.flag} style={{ color: 'red' }} /> 
-        <FaFlag className={styles.flag} style={{ color: 'blue' }} /> 
+        <Flag code="FR" className={styles.flag} alt="France Flag" />
+        <Flag code="TN" className={styles.flag} alt="Tunisia Flag" />
       </div>
     </div>
   );

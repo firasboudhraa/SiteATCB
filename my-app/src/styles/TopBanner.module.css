@@ -29,4 +29,13 @@
     margin-left: 20px;
     margin-right: 10px;
   }
+
+  .logo img {
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 200px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    width: 80px;
+  }
   
