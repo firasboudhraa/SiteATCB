@@ -1,5 +1,6 @@
 .navbarContainer {
     display: flex;
+    flex-wrap: wrap;
     margin-left: 40px;
     margin-right: 40px;
     justify-content: space-between;
@@ -78,4 +79,32 @@
   .loginButton:hover {
     background-color: #005bb5;
   }
+
+  @media (max-width: 768px) {
+    .navbarContainer {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 10px; 
+    }
+
+    .menu {
+        flex-direction: column; 
+        gap: 10px; 
+        margin-left: 0;
+    }
+
+    .searchContainer {
+        margin-top: 10px; 
+        justify-content: flex-start; 
+        width: 100%; 
+    }
+
+    .searchInput {
+        width: 100%; 
+    }
+
+    .language {
+        margin-top: 10px; 
+    }
+}
   

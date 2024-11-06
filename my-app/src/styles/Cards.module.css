@@ -1,18 +1,28 @@
+.cardsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .cards {
     display: flex;
-    flex-wrap: wrap;
     gap: 1.5rem;
-    justify-content: center;
-    margin-top: 1rem;
+    overflow-x: auto;
+    padding: 1rem;
+    width: 66rem;
+    scroll-snap-type: x mandatory; 
 }
 
 .card {
+    flex: 0 0 auto;
     background: var(--white);
     border-radius: 1.5rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px;
-    display: flex;
     width: 22rem;
     height: 29rem;
+    scroll-snap-align: start;
+    display: flex;
     flex-direction: column;
     overflow: hidden;
     cursor: pointer;
@@ -40,20 +50,16 @@
     transform: scale(1.35);
 }
 
-.card__address {
-    margin-top: 0.5rem;
-}
-
 .card__price {
     background-color: var(--white);
     color: var(--text);
-    z-index: 1;
     position: absolute;
     bottom: 1.25rem;
+    left: 1.25rem;
     padding: 0.25rem 0.5rem;
     border-radius: 0.5rem;
-    left: 1.25rem;
     font-weight: bold;
+    z-index: 1;
 }
 
 .card__content {
@@ -64,11 +70,14 @@
     color: var(--text);
 }
 
-.card__bottom {
-    margin-top: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.card__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card__address {
+    margin-top: 0.5rem;
+    color: var(--text);
 }
 
 .card__description {
@@ -78,6 +87,13 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5;
     line-clamp: 5;
+}
+
+.card__bottom {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .card__btn {
@@ -102,4 +118,16 @@
     fill: red;
 }
 
+.scrollButton {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--text);
+    padding: 0 0.5rem;
+    transition: color 0.2s ease-in-out;
+}
 
+.scrollButton:hover {
+    color: #333; /* Adjust this for hover color */
+}

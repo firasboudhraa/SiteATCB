@@ -3,6 +3,7 @@ import Flag from 'react-world-flags';
 import styles from "@/styles/Navbar.module.css";
 
 const Navbar = () => {
+  
   return (
     <div className={styles.navbarContainer}>
       <div className={styles.logo}>
