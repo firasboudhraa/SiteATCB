@@ -11,7 +11,7 @@ const Navbar = () => {
 
       <div className={styles.menu}>
         <a href="/">Accueil</a>
-        <a href="/actualite">Actualités</a>
+        <a href="Actualite">Actualités</a>
         <a href="/presentation">Présentation</a>
         <a href="/recherche">Recherche</a>
         <a href="/formation">Formation</a>
