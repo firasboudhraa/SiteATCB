@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../styles/StatsBar.module.css';
+import styles from '../../../../styles/StatsBar.module.css';
 import { FaCalendarAlt, FaClipboardCheck, FaHardHat, FaHandshake } from 'react-icons/fa';
 
 export default function StatsBar() {

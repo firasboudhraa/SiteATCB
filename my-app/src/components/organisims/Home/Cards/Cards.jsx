@@ -1,7 +1,7 @@
 "use client";
 import { useRef, useState ,useLayoutEffect  } from "react";
 import Image from "next/image";
-import styles from "../../../styles/Cards.module.css";
+import styles from "../../../../styles/Cards.module.css";
 
 export default function Cards() {
   const cardContainerRef = useRef(null);
