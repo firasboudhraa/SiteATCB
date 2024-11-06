@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState ,useEffect } from "react";
+import { useRef, useState ,useLayoutEffect  } from "react";
 import Image from "next/image";
 import styles from "../../../styles/Cards.module.css";
 
@@ -60,13 +60,19 @@ export default function Cards() {
     Array(cardData.length).fill(false)
   );
 
-  useEffect(() => {
-    if (cardContainerRef.current) {
-      const cardElement = cardContainerRef.current.querySelector(`.${styles.card}`);
-      if (cardElement) {
-        setCardWidth((cardElement.offsetWidth + 24)*3); // 24 is the gap between cards; adjust if needed
+  useLayoutEffect(() => {
+    const updateCardWidth = () => {
+      if (cardContainerRef.current) {
+        const cardElement = cardContainerRef.current.querySelector(`.${styles.card}`);
+        if (cardElement) {
+          setCardWidth(cardElement.offsetWidth + 24); // 24 is the gap between cards
+        }
       }
-    }
+    };
+
+    updateCardWidth(); // Initial calculation
+    window.addEventListener("resize", updateCardWidth); // Update on resize
+    return () => window.removeEventListener("resize", updateCardWidth); // Cleanup
   }, []);
 
   const toggleLike = (index) => {
@@ -76,11 +82,15 @@ export default function Cards() {
   };
 
   const scrollLeft = () => {
-    cardContainerRef.current.scrollBy({ left: -300, behavior: "smooth" });
+    if (cardContainerRef.current && cardWidth > 0) {
+      cardContainerRef.current.scrollBy({ left: -cardWidth * 3, behavior: "smooth" });
+    }
   };
 
   const scrollRight = () => {
-    cardContainerRef.current.scrollBy({ left: 300, behavior: "smooth" });
+    if (cardContainerRef.current && cardWidth > 0) {
+      cardContainerRef.current.scrollBy({ left: cardWidth * 3, behavior: "smooth" });
+    }
   };
 
   return (
