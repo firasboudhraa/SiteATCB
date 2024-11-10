@@ -9,7 +9,6 @@ const Foire = () => {
     '/3.png',
   ];
 
-  // État pour l'index de l'image actuelle pour "Nos Foire"
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToNext = () => {

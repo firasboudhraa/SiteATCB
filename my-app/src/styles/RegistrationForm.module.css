@@ -1,0 +1,178 @@
+.container {
+    display: flex;
+    padding: 20px;
+    background-color: #e7f3d8;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px; /* Increased gap for better spacing */
+  }
+  
+  .infoSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .image {
+    width: 100%;
+    max-width: 350px; /* Increased size for better balance */
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 20px; /* Increased space between image and paragraph */
+  }
+  
+  .infoText {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formSection {
+    flex: 2;
+    background-color: #f7fbe7;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ccc; /* Border around the form */
+    position: relative;
+  }
+  
+  .formSection h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .inputGroup {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .inputGroup input {
+    width: 100%;
+    padding: 12px 15px;
+    padding-left: 40px; /* Space for the icon */
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .submitButton {
+    width: 100%;
+    padding: 12px;
+    background-color: #f7cd4b;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #f5b830;
+  }
+  
+  .formSection p {
+    font-size: 0.9em;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .socialLogin {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .socialButton {
+    width: 50px;
+    height: 50px;
+    background-color: #dd4b39; /* Google red color */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .socialButton:nth-child(2) {
+    background-color: #3b5998; /* Facebook blue color */
+  }
+  
+  .socialButton:hover {
+    background-color: #c1351d; /* Google hover color */
+  }
+  
+  .socialButton:nth-child(2):hover {
+    background-color: #365899; /* Facebook hover color */
+  }
+  
+  .socialIcon {
+    font-size: 22px;
+  }
+  
+  .rulesAgreement {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .rulesAgreement input {
+    margin-right: 10px;
+  }
+  
+  .rulesAgreement label {
+    color: #333;
+  }
+  
+  .rulesAgreement a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .rulesAgreement a:hover {
+    text-decoration: underline;
+  }
+  
+  .checkboxGroup {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    display: flex;
+    gap: 400px;
+  }
+  
+  .checkboxGroup label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .checkboxGroup input {
+    margin-right: 10px;
+  }
+
+  .alreadyAccount {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 20px;
+  }
+  

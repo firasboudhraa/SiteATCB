@@ -9,7 +9,7 @@ const TopBanner = () => {
   const router = useRouter();
 
   const handleLogin = () => {
-    router.push('/');  
+    router.push('/Connexion');  
   };
 
   return (
