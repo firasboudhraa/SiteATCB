@@ -9,31 +9,31 @@ export default function Cards() {
 
   const cardData = [
     {
-      title: "Chauffage",
+      title: "Construction",
       address: "258 Serenity Lane, Crestwood Hills",
       description:
         "Nestled along the tranquil shores of a pristine lake, Lakeview Lakeside offers an idyllic escape into nature's embrace. This exquisite property combines rustic charm with modern luxury, featuring a spacious, elegantly designed home with panoramic lake views.",
       price: "$4,750,000",
       properties: "3 Bed | 2 Bath | 7,500 sq. ft",
-      img: "/Cards/lakeview-elegance.png",
+      img: "/Cards/const.jpg",
     },
     {
-      title: "Vista Paradiso",
+      title: "Jardinage",
       address: "123 Paradise Road, Lakeview",
       description:
         "Vista Paradiso is an epitome of modern luxury, nestled against a backdrop of a breathtaking lake and verdant scenery.",
       price: "$4,500,000",
       properties: "4 Bed | 2 Bath | 7,000 sq. ft",
-      img: "/Cards/vista-paradiso.png",
+      img: "/Cards/jar.jpg",
     },
     {
       title: "Skyline Oasis",
-      address: "450 Metropolitan Ave, Downtown",
+      
       description:
-        "Skyline Oasis is a beacon of modern urban luxury, located in the heart of the city.",
+        "Que vous soyez entrain de construire votre maison ou la rénover, vous aurez besoin de peindre votre domicile. De l'extérieur ou de l'intérieur, la pose de la peinture nécessite l'intervention d'un professionnel.",
       price: "$5,200,000",
       properties: "3 Bed | 3 Bath | 3,000 sq. ft",
-      img: "/Cards/skyline-oasis.png",
+      img: "/Cards/peinture.jpg",
     },
     {
       title: "Skyline Oasis",

@@ -7,6 +7,19 @@
   background-color: var(--bg);    /* Use background color variable */
 }
 
+.bannerContainer {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; 
+  background-color: #fff; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
 .logo img {
   height: 70px;                   /* Set logo image height */
   margin-left: 20px;               /* Margin on the left of the logo */

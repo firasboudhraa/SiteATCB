@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
     --bg: #E6F6E5;
     --bgSoft: #182237;
@@ -11,10 +10,10 @@
 }
 
 body {
+    padding-top: 100px; /* Augmentez cette valeur pour décaler davantage le contenu vers le bas */
     background-color: var(--bg);
     color: var(--text);
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
@@ -28,6 +27,4 @@ a {
     background: linear-gradient(90deg, #6EE7B7 0%, #3B82F6 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-  
-  
+}
