@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/molecules/Navbar/Navbar";
 import Footer from "@/components/molecules/Footer/Footer";
 import TopBanner from "@/components/molecules/TopBanner/TopBanner"
+import AdBanner from "@/components/molecules/AdBanner/AdBanner"
 import styles from "@/styles/Layout.module.css";
 
 const geistSans = localFont({
@@ -39,6 +40,9 @@ export default function RootLayout({
             <div className={styles.childrenWrapper}>
               {children}
             </div>
+            <div className={styles.adBannerWrapper}>
+            <AdBanner />
+          </div>
             <div className={styles.footerWrapper}>
                 <Footer />
               </div>          

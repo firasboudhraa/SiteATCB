@@ -1,0 +1,28 @@
+/* components/AdBanner.module.css */
+.adBanner {
+    position: fixed;
+    top: 20%;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .adImages {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacement entre les images */
+    align-items: center;
+  }
+  
+  .adItem {
+    width: 200px; /* Largeur des images publicitaires */
+    height: auto;
+  }
+  
+  .adImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Ombre portée pour l'effet */
+    object-fit: cover; /* Maintenir le rapport d'aspect de l'image */
+  }
+  
