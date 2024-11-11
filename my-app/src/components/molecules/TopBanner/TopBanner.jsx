@@ -25,11 +25,11 @@ const TopBanner = () => {
       {/* Wrap buttons in a container to align them on the right */}
       <div className={styles.loginButtonsContainer}>
         <button className={styles.loginButton} onClick={handlesignup}>  
-          <FaUser className={styles.icon1} /> <strong>Sign up </strong>   
+          <FaUser className={styles.icon1} /> <strong>Créer un compte </strong>   
         </button>
 
         <button className={styles.loginButton} onClick={handleLogin}>  
-          <FaUser className={styles.icon} /> <strong>Login </strong>   
+          <FaUser className={styles.icon} /> <strong>Se Connecter </strong>   
         </button>
       </div>
     </div>
