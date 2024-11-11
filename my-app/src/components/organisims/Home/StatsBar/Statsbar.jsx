@@ -6,7 +6,7 @@ export default function StatsBar() {
   const statsData = [
     { icon: <FaCalendarAlt />, number: '9ème', label: "Année d'activité" },
     { icon: <FaClipboardCheck />, number: '8318', label: 'Demandes validées' },
-    { icon: <FaHardHat />, number: '1244', label: 'Professionnels actifs' },
+    { icon: <FaHardHat />, number: '1919', label: 'Professionnels actifs' },
     { icon: <FaHandshake />, number: '26132', label: 'Mises en relation' },
   ];
 

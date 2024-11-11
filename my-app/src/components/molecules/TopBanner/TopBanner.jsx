@@ -8,8 +8,12 @@ import Image from 'next/image';
 const TopBanner = () => {
   const router = useRouter();
 
+  const handlesignup = () => {
+    router.push('/Connexion/Signup');  
+  };
+
   const handleLogin = () => {
-    router.push('/Connexion');  
+    router.push('/Connexion/Login');  
   };
 
   return (
@@ -17,6 +21,12 @@ const TopBanner = () => {
       <div className={styles.logo}>  
       <Image src="/logo.png" alt="Logo" width={80} height={70} />
       </div>
+
+      
+
+      <button className={styles.loginButton} onClick={handlesignup}>  
+      <FaUser className={styles.icon1} /> <strong>Sign up </strong>   
+      </button>
 
       <button className={styles.loginButton} onClick={handleLogin}>  
       <FaUser className={styles.icon} /> <strong>Login </strong>   

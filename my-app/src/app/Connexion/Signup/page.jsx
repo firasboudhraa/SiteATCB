@@ -1,5 +1,5 @@
 import React from 'react'
-import RegistrationForm from '../../components/organisims/Connexion/Sign-Up/RegistrationForm'
+import RegistrationForm from '../../../components/organisims/Connexion/Sign-Up/RegistrationForm'
 
 const ConnexionPage = () => {
   return (
