@@ -18,13 +18,13 @@ const LoginForm = () => {
       setForm({
         ...form,
         isExpert: true,
-        hasWork: false // Uncheck 'hasWork' when 'isExpert' is selected
+        hasWork: false 
       });
     } else if (name === 'hasWork' && checked) {
       setForm({
         ...form,
         hasWork: true,
-        isExpert: false // Uncheck 'isExpert' when 'hasWork' is selected
+        isExpert: false 
       });
     } else {
       setForm({

@@ -1,44 +1,48 @@
 
 .bannerContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: var(--bg);
-  }
-  
-  
-  .loginButton {
-    display: flex;
-    align-items: center;
-    background-color: var(--bg);
-    color: rgb(23, 20, 20);
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .loginButton:hover {
-    background-color: #005bb5; 
-  }
-  
-  .icon {
-    margin-left: 20px;
-    margin-right: 10px;
-  }
-  .icon1 {
-    margin-left: 800px;
-    margin-right: 10px;
-  }
-  .logo img {
-    height: 70px;
-    margin-left: 20px;
-    margin-right: 200px;
-    border-radius: 50%; 
-    object-fit: cover; 
-    width: 80px;
-  }
-  
+  display: flex;
+  justify-content: space-between;  /* Keeps the logo to the left and buttons to the right */
+  align-items: center;            /* Vertically center the items */
+  padding: 10px 20px;
+  background-color: var(--bg);    /* Use background color variable */
+}
+
+.logo img {
+  height: 70px;                   /* Set logo image height */
+  margin-left: 20px;               /* Margin on the left of the logo */
+  border-radius: 50%;              /* Make logo round */
+  object-fit: cover;               /* Ensures logo image fits within the container */
+  width: 80px;                     /* Set width of logo */
+}
+
+.loginButtonsContainer {
+  display: flex;                  /* Make buttons appear next to each other */
+  justify-content: flex-end;      /* Push buttons to the right */
+  align-items: center;            /* Vertically center the buttons */
+  gap: 10px;                      /* Space between the buttons */
+}
+
+.loginButton {
+  display: flex;
+  align-items: center;            /* Align icon and text horizontally */
+  background-color: var(--bg);    /* Set background to be same as banner */
+  color: rgb(23, 20, 20);         /* Set text color */
+  padding: 10px 15px;             /* Add padding inside button */
+  border: none;                   /* Remove border */
+  border-radius: 5px;             /* Rounded corners */
+  cursor: pointer;               /* Cursor turns to pointer on hover */
+  font-size: 16px;                /* Set font size */
+  transition: background-color 0.3s ease;  /* Smooth transition on hover */
+}
+
+.loginButton:hover {
+  background-color: #005bb5;      /* Change background color on hover */
+}
+
+.icon {
+  margin-left: 10px;              /* Space between icon and text */
+}
+
+.icon1 {
+  margin-left: 10px;              /* Space between icon and text for the second button */
+}
