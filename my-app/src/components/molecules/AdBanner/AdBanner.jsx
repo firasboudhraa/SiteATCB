@@ -8,17 +8,17 @@ const AdBanner = () => {
       <div className={styles.adImages}>
         <div className={styles.adItem}>
           <Link href="/promotion1">
-            <img src="/images/ad1.jpg" alt="Publicité 1" className={styles.adImage} />
+            <img src="/building.jpg" alt="Publicité 1" className={styles.adImage} />
           </Link>
         </div>
         <div className={styles.adItem}>
           <Link href="/promotion2">
-            <img src="/images/ad2.jpg" alt="Publicité 2" className={styles.adImage} />
+            <img src="/building.jpg" alt="Publicité 2" className={styles.adImage} />
           </Link>
         </div>
         <div className={styles.adItem}>
           <Link href="/promotion3">
-            <img src="/images/ad3.jpg" alt="Publicité 3" className={styles.adImage} />
+            <img src="/building.jpg" alt="Publicité 3" className={styles.adImage} />
           </Link>
         </div>
       </div>
